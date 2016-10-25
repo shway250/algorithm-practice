@@ -7,15 +7,16 @@
 
 
 function palindrome(str) {
-  for(var i = 0; i < str.length; i++){
-    for(var j = str.length; j > 0; j--){
-      
+  var string = str.toLowerCase().replace(/[^A-Za-z0-9]/g, '');
+  var reverseStr = string.split('').reverse().join(''); 
+    if(string === reverseStr){
+      return true;
     }
-  }
-
-  return true;
+    else{
+      return false;
+    }
 }
 
+palindrome('racecar');
 
-
-palindrome("eye");
+///Try to use just string methods if able, don't force everything into an array.
