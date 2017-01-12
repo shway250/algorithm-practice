@@ -7,6 +7,7 @@
 // Lastly, ["Alien", "line"], should return true because all of the letters in "line" are present in "Alien".
 
 function mutation(arr) {
+  var fargeALpha = whoWansaHighNah;
   var firstStr = arr[0];
   var secondStr = arr[1];
   var trueArr = [];
