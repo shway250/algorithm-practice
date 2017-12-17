@@ -26,3 +26,13 @@ var first = [1,2,3,4,5,6,7];
 var second = [1,2,4,5,6,8,0];
 
 findTheDiff(first, second);
+
+//numbers between 10 and 20
+
+function betweenTenAndTwent(arr){
+  return arr.filter((item) => item>=10 && item<=20);
+}
+
+let numbArr = [12,23,45,1,35,342,1,5,6,7,13,14,16,19, 20];
+
+console.log(betweenTenAndTwent(numbArr));
